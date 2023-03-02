@@ -1,7 +1,6 @@
 # AppartamentOnCiprus
-# Realty
 Сайт по услугам продажи недвижимости на Кипре
-## Realty : https://avngrss.github.io/Realty/
+## Realty : https://avngrss.github.io/AppartamentOnCiprus/
 
 - Лендинг
 - Использование SCSS и сборщика GULP

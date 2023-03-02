@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20230302190313" />
+<link rel="stylesheet" href="css/style.min.css?_v=20230302190313" />
+<link rel="icon" type="image/png" sizes="16x16" href="./img/logo.png" />
+<title>Агентство недвижимости Подберем апартаменты на Северном Кипре</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230302190313" />
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js?_v=20230302190313"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css?_v=20230302190313">
+</head>
+<body>
+<!-- preloader -->
+<div id="preloader">
+<img src="./img/preloader.gif" alt="loader" />
+</div>
+<!-- Header -->
+<header class="header" style="background-image: url(./img/headerbg.jpeg); background-size: cover; background-position: center">
+<div class="container__fluid">
+<div class="container">
+<div class="header__top">
+<div class="header__logo">
+<a href=""><picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Логотип" /></picture></a> 
+</div>
+<div class="header__menu">
+<div class="header__menu-btn"><span></span><span></span><span></span></div>
+</div>
+<div class="header__information">
+<div class="header__links">
+<a class="header__links-item link" href="tel:+905338512289">+90 (533) 851-22-89</a>
+<a class="header__links-item-one link lang" key="link-phone" href="#">Перезвоните мне</a>
+</div>
+<div class="header__contacts">
+<a class="link" href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+<g filter="url(#a)"><circle cx="20" cy="20" r="20" fill="url(#b)" /></g>
+<g clip-path="url(#c)">
+<path fill="#fff" fill-rule="evenodd" d="M25.474 14.505a6.923 6.923 0 0 0-4.93-2.044c-3.84 0-6.966 3.126-6.968 6.968 0 1.229.32 2.427.93 3.484l-.988 3.611 3.694-.969a6.96 6.96 0 0 0 3.33.848h.003c3.84 0 6.967-3.126 6.968-6.968a6.926 6.926 0 0 0-2.039-4.93Zm-4.93 10.721h-.002c-1.039 0-2.058-.28-2.947-.807l-.212-.125-2.192.575.585-2.138-.137-.219a5.778 5.778 0 0 1-.886-3.082 5.8 5.8 0 0 1 5.794-5.791c1.547 0 3.002.603 4.095 1.698a5.757 5.757 0 0 1 1.695 4.098 5.8 5.8 0 0 1-5.792 5.791Zm3.178-4.337c-.174-.088-1.03-.509-1.19-.567-.16-.058-.276-.087-.392.087-.116.175-.45.567-.55.683-.103.116-.204.13-.378.044-.174-.088-.735-.271-1.4-.865a5.251 5.251 0 0 1-.969-1.206c-.102-.174 0-.26.076-.355.189-.234.378-.48.436-.596.058-.116.029-.218-.015-.305-.043-.087-.392-.944-.537-1.293-.141-.339-.285-.293-.392-.298a6.908 6.908 0 0 0-.333-.007.64.64 0 0 0-.465.218c-.16.175-.609.596-.609 1.453 0 .857.624 1.685.711 1.801.087.116 1.228 1.875 2.974 2.629.416.18.74.287.993.367.417.132.797.114 1.097.069.334-.05 1.03-.421 1.175-.828.145-.407.145-.755.101-.828-.043-.073-.16-.116-.333-.203Z" clip-rule="evenodd"/>
+</g>
+<defs>
+<lineargradient id="b" x1="20" x2="20" y1="0" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1DBE5D" />
+<stop offset="1" stop-color="#1B913A" />
+</lineargradient>
+<clippath id="c"><path fill="#fff" d="M13 12h15v15H13z" /></clippath>
+<filter id="a" width="40" height="40" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+<feflood flood-opacity="0" result="BackgroundImageFix" />
+<feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+<fecolormatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+<feoffset />
+<fegaussianblur stdDeviation="10.5" />
+<fecomposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+<fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.23 0" />
+<feblend in2="shape" result="effect1_innerShadow_102_760" />
+</filter>
+</defs>
+</svg>
+</a>
+<a class="link" href="#">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+<g filter="url(#a)"><circle cx="20" cy="20" r="20" fill="url(#b)" /></g>
+<g clip-path="url(#c)"><path fill="#fff" d="m17.886 22.488-.248 3.49c.355 0 .508-.152.693-.336l1.664-1.59 3.449 2.526c.632.352 1.078.166 1.249-.582l2.263-10.608h.001c.2-.935-.338-1.301-.954-1.072l-13.307 5.095c-.908.352-.894.858-.154 1.088l3.402 1.058 7.902-4.944c.372-.247.71-.11.432.136l-6.392 5.74Z" /></g>
+<defs>
+<lineargradient id="hh" x1="20" x2="20" y1="41.5" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6189E0" />
+<stop offset="1" stop-color="#7DA4F4" />
+</lineargradient>
+<clippath id="ccc"><path fill="#fff" d="M12 13h15v15H12z" /></clippath>
+<filter id="aaa" width="40" height="40" x="0" y="0" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+<feflood flood-opacity="0" result="BackgroundImageFix" />
+<feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+<fecolormatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+<feoffset />
+<fegaussianblur stdDeviation="10.5" />
+<fecomposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+<fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.23 0" />
+<feblend in2="shape" result="effect1_innerShadow_102_756" />
+</filter>
+</defs>
+</svg>
+</a>
+</div>
+<div class="header__language">
+<div class="header__item">
+<button class="header__btn-lng translate" id="ru">rus</button>
+</div>
+<div class="header__item">
+<button class="header__btn-lng translate" id="en">eng</button>
+</div>
+</div>
+</div>
+</div>
+<div class="header__content">
+<div class="header__title-block">
+<h1 class="header__title lang" key="title" data-aos="fade-right" data-aos-duration="2000">подберем апартаменты <br />на северном кипре
+</h1>
+<p class="header__subtitle lang" key="subtitle" data-aos="fade-right" data-aos-duration="4000">или построим по вашему проекту</p>
+</div>
+<div class="header__title-writedown">
+<p class="header__writedown-text lang" key="header__writedown-text" data-aos="fade-right" data-aos-duration="5000">Все расходы по проживанию наших <br />гостей во время тура мы <span class="header__writedown-text-black">берем на себя</span>
+</p>
+<button class="header__btn lang" key="header__btn">Записаться на тур</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="main">
+<div class="photo">
+<div class="container__fluid">
+<div class="swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide"><picture><source srcset="./img/slider/1.webp" type="image/webp"><img src="./img/slider/1.jpeg" alt="" /></picture></div>
+<div class="swiper-slide"><picture><source srcset="./img/slider/2.webp" type="image/webp"><img src="./img/slider/2.jpeg" alt="" /></picture></div>
+<div class="swiper-slide"><picture><source srcset="./img/slider/3.webp" type="image/webp"><img src="./img/slider/3.jpeg" alt="" /></picture></div>
+<div class="swiper-slide"><picture><source srcset="./img/slider/4.webp" type="image/webp"><img src="./img/slider/4.jpeg" alt="" /></picture></div>
+<div class="swiper-slide"><picture><source srcset="./img/slider/5.webp" type="image/webp"><img src="./img/slider/5.jpeg" alt="" /></picture></div>
+<div class="swiper-slide"><picture><source srcset="./img/slider/6.webp" type="image/webp"><img src="./img/slider/6.jpeg" alt="" /></picture></div>
+</div>
+</div>
+</div>
+</div>
+<section class="dreams" style="background-image: url(./img/dreambg.png); background-size: cover" data-aos="fade-up" data-aos-duration="3000">
+<div class="container">
+<p class="dreams__text lang" key="dreams__text">Признавайтесь,</p>
+<h2 class="dreams__title lang" key="dreams__title">Каждый состоявшийся и самодостаточный человек мечтает иметь свой уютный домик где-нибудь в курортном городе..</h2>
+<div class="dreams__content">
+<div class="dreams__block">
+<div class="dreams__block-one" data-aos="zoom-out-right" data-aos-duration="3000">
+<picture><source srcset="./img/icon.webp" type="image/webp"><img src="./img/icon.png" alt="Иконка" /></picture>
+<p class="dream__content-text lang" key="dream__content-text1">Первая береговая линия,море в шаговой доступности</p>
+</div>
+<div class="dreams__block-two" data-aos="zoom-out-right" data-aos-duration="3000">
+<picture><source srcset="./img/icon2.webp" type="image/webp"><img src="./img/icon2.png" alt="Иконка" /></picture>
+<p class="dream__content-text lang" key="dream__content-text2">Роскошная и просторная вилла с личным бассейном</p>
+</div>
+</div>
+<div class="dreams__block dreams__block-style">
+<picture><source srcset="./img/girl.webp" type="image/webp"><img class="img" src="./img/girl.png" alt="Девушка" /></picture>
+</div>
+<div class="dreams__block">
+<div class="dreams__block-three" data-aos="zoom-out-left" data-aos-duration="3000">
+<picture><source srcset="./img/icon3.webp" type="image/webp"><img src="./img/icon3.png" alt="Иконка" /></picture>
+<p class="dream__content-text lang" key="dream__content-text3">Развлечения: бутики, магазины неподалеку</p>
+</div>
+<div class="dreams__block-four" data-aos="zoom-out-left" data-aos-duration="3000">
+<picture><source srcset="./img/icon4.webp" type="image/webp"><img src="./img/icon4.png" alt="Иконка" /></picture>
+<p class="dream__content-text lang" key="dream__content-text4">Чистота и спокойствие:без шума и трафика</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="cat__house">
+<div class="container">
+<h2 class="cat__house-title lang" key="cat__house-title">Покупая дешевую недвижимость вы разрушаете картину своей мечтыи получаете «кота в мешке»</h2>
+<div class="cat__house-content">
+<div class="cat__house-list">
+<div class="cat__house-list-item" data-aos="fade-up" data-aos-duration="5000">
+<div class="cat__house-img">
+<picture><source srcset="./img/catitem1.webp" type="image/webp"><img src="./img/catitem1.png" alt="item1" /></picture>
+</div>
+<div class="cat__house-text lang" key="cat__house-text1">Шумные соседи, устраивающие тусовки каждый день, пока вы пытаетесь уснуть</div>
+</div>
+<div class="cat__house-list-item" data-aos="fade-up" data-aos-duration="5000">
+<div class="cat__house-img">
+<picture><source srcset="./img/catitem2.webp" type="image/webp"><img src="./img/catitem2.png" alt="item2" /></picture>
+</div>
+<div class="cat__house-text lang" key="cat__house-text2">Отсутстиве какой-либо безопасности, воровство и абсолютная растерянность из-за бытовых вопросов</div>
+</div>
+<div class="cat__house-list-item" data-aos="fade-up" data-aos-duration="2000">
+<div class="cat__house-img">
+<picture><source srcset="./img/catitem3.webp" type="image/webp"><img src="./img/catitem3.png" alt="item3" /></picture>
+</div>
+<div class="cat__house-text lang" key="cat__house-text3">Недобросовестные застройщики берут ваши деньги и забиваютна строительство</div>
+</div>
+</div>
+<div class="cat__house-bgimg">
+<picture><source srcset="./img/cats.webp" type="image/webp"><img src="./img/cats.png" alt="Кот" /></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="realty">
+<div class="container">
+<div class="realty__content">
+<div class="realty__img" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+<picture><source srcset="./img/realty.webp" type="image/webp"><img src="./img/realty.png" alt="Марал Realty" /></picture>
+<div class="realty__say">
+<h6 class="realty__one-title">@maral_kinayat</h6>
+<p class="realty__contects lang" key="realty__contects">А еще, несколько раз в неделю я, либо мой ассистент лично высылает новые обьекты в формате видео</p>
+</div>
+</div>
+<div class="realty__info">
+<h3 class="realty__title lang" key="realty__title">Марал Realty</h3>
+<p class="realty__text lang" key="realty__text">эксперт по недвижимости</p>
+<p class="realty__quote lang" key="realty__quote">Приветствую, меня зовут Марал Кинаят и я точно знаю, что каждый мой клиент покупает не недвижимость,в первую очередь, он приобретает комфорт для себя и своих близких</p>
+<ul class="realty__list">
+<li class="realty__item lang" key="realty__item">Лицензированный оценщик</li>
+<li class="realty__item lang" key="realty__item1">Количество сделок свыше 100 до 800.000$</li>
+<li class="realty__item lang" key="realty__item2">Опыт работы с 2005 года с зарубежной недвижимостью</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="select">
+<div class="container">
+<h2 class="select__title lang" key="select__title">И у каждого человека есть выбор:</h2>
+<div class="select__content">
+<div class="select__selects" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<h3 class="select__subtitle lang" key="select__subtitle">«Найти как бы подешевле»</h3>
+<p class="select__subtext lang" key="select__subtext">дешевая многоэтажка</p>
+<picture><source srcset="./img/bad.webp" type="image/webp"><img class="select__img" src="./img/bad.jpeg" alt="«Найти как бы подешевле»" /></picture>
+<div class="select__photo">
+<picture><source srcset="./img/bad/bad1.webp" type="image/webp"><img src="./img/bad/bad1.png" alt="bad-photo" /></picture>
+<picture><source srcset="./img/bad/bad2.webp" type="image/webp"><img src="./img/bad/bad2.png" alt="bad-photo" /></picture>
+<picture><source srcset="./img/bad/bad3.webp" type="image/webp"><img src="./img/bad/bad3.png" alt="bad-photo" /></picture>
+<picture><source srcset="./img/bad/bad4.webp" type="image/webp"><img src="./img/bad/bad4.png" alt="bad-photo" /></picture>
+<picture><source srcset="./img/bad/bad5.webp" type="image/webp"><img src="./img/bad/bad5.png" alt="bad-photo" /></picture>
+</div>
+<p class="select__info lang" key="select__info">При этом те, кто все-таки выбирают подешевле зачастую жалуются, что у них: некачественные строй-материалы, плесень на стенах, отсутствие звукоизоляции, много соседей</p>
+</div>
+<div class="select__selects" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<h3 class="select__subtitle lang" key="select__subtitle1">«Забота о себе и комфорт»</h3>
+<p class="select__subtext select__subtitle-gold lang" key="select__subtext1">комфортная вилла</p>
+<picture><source srcset="./img/better.webp" type="image/webp"><img class="select__img" src="./img/better.jpeg" alt="«Забота о себе и комфорт»" /></picture>
+<div class="select__photo select__photo-better">
+<picture><source srcset="./img/better/better1.webp" type="image/webp"><img src="./img/better/better1.png" alt="better-photo" /></picture>
+<picture><source srcset="./img/better/better2.webp" type="image/webp"><img src="./img/better/better2.png" alt="better-photo" /></picture>
+<picture><source srcset="./img/better/better3.webp" type="image/webp"><img src="./img/better/better3.png" alt="better-photo" /></picture>
+</div>
+<p class="select__info select__info-black lang" key="select__info">В этом варианте: стройматериалы европейского качества, нет плесени, хорошая звукоизоляция, а из людей лишь ваши близкие рядом</p>
+</div>
+</div>
+<p class="select__price lang" key="select__price">Ценовой сегмент напрямую влияет на окружение вокруг вас, комфорт и безопасность. Какое будущее примете вы? Ответ ясен, как 320 солнечных дней в году на Северном Кипре :)</p>
+<div class="select__dialog">
+<div class="select__dialog-one">
+<picture><source srcset="./img/dialog1.webp" type="image/webp"><img src="./img/dialog1.png" alt="dialog1" /></picture>
+<p class="select__dialog-text lang" key="select__dialog-text">Я поняла... А что предлагаете вы?</p>
+</div>
+<div class="select__dialog-two">
+<picture><source srcset="./img/dialog2.webp" type="image/webp"><img src="./img/dialog2.png" alt="dialog2" /></picture>
+<p class="select__dialog-text lang" key="select__dialog-text1">Есть 2 варианта. Построить с нуля, либо подобрать готовое, и вот как мы работаем, когда строим:</p>
+</div>
+</div>
+</div>
+</section>
+<section class="video">
+<div class="container__fluid" style="background-image: url(./img/videobg.jpeg); background-size: cover">
+<div class="container">
+<div class="video__content">
+<div class="video__player">
+<h3 class="title video__title lang" key="video__title">Ведем онлайн-трансляцию строительства и отправляем ежемесячный видео-отчет с квадрокоптеров</h3>
+<div class="video__player-video" data-aos="fade-up" data-aos-duration="2000">
+<video class="video__play" src="./img/video.mp4" poster="./img/videoposter.png">
+<source src="./img/video.mp4" />
+</video>
+<div class="video__btn"></div>
+</div>
+</div>
+<div class="video__info" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+<picture><source srcset="./img/man.webp" type="image/webp"><img src="./img/man.png" alt="man" /></picture>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="build" style="background-image: url(./img/building/pdfbg.jpeg); background-size: cover" data-aos="zoom-in-down" data-aos-duration="2000">
+<div class="container__fluid">
+<div class="container">
+<div class="build__img">
+<picture><source srcset="./img/building/circle.webp" type="image/webp"><img  src="./img/building/circle.png" alt="Круги"></picture>
+</div>
+<h3 class="title build__title lang" key="build__title">Можем предложить на выбор участки <br> и построить для вас не только виллу</h3>
+<p class="build__subtitle lang" key="build__subtitle">но и жилой комплекс и даже отель</p>
+<div class="swiper swiper1">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<p class="build__text lang" key="build__text">городок из вилл</p>
+<picture><source srcset="./img/building/card1.webp" type="image/webp"><img src="./img/building/card1.jpeg" alt="городок из вилл"></picture>
+</div>
+<div class="swiper-slide">
+<p class="build__text lang" key="build__text1">строящийся объект</p>
+<picture><source srcset="./img/building/card2.webp" type="image/webp"><img src="./img/building/card2.jpeg" alt="строящийся объект"></picture>
+</div>
+<div class="swiper-slide">
+<p class="build__text lang" key="build__text2">большой отель</p>
+<picture><source srcset="./img/building/card3.webp" type="image/webp"><img src="./img/building/card3.jpeg" alt="большой отель"></picture>
+</div>
+</div>
+<p class="build__hide lang" key="build__hide">Листайте влево, чтобы увидеть</p>
+</div>
+<div class="build__block-text">
+<p class="build__subinfo build__subinfo-first lang" key="build__subinfo-first">+ Большой выбор ниш для бизнеса. Значимый спрос людей, но предложений либо очень мало, либо их вовсе нет: это можете быть вы и сразу занять лидирующие позиции</p>
+<picture><source srcset="./img/NorthKipre.webp" type="image/webp"><img src="./img/NorthKipre.png" alt="NorthKipre"></picture>
+</div>
+</div>
+</div>
+<div class="container__fluid" style="background-image: url(./img/catalog.png); background-size: cover;">
+<div class="container">
+<div class="build__form">
+<h3 class="title lang title__build" key="title__build">Не хотите ждать, пока ваш дом достроится?</h3>
+<p class="build__subinfo lang" key="build__subinfo-two">Получите каталог со свободными уже готовыми к заселению предложениями</p>
+<form id="build__form">
+<input type="text" class="lang" key="input1" required pattern="\w{3,16}" placeholder="Как к Вам обращаться?">
+<input type="tel" class="lang" key="input2" required pattern="[0-9]{5,10}" title="Введите корректный номер телефона" placeholder="Контактный номер телефона">
+<button class="build__btn lang" key="build__btn">получить pdf-каталог</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="price">
+<div class="container">
+<div class="price__img">
+<picture><source srcset="./img/stars.webp" type="image/webp"><img  src="./img/stars.png" alt="stars"></picture>
+</div>
+<h4 class="title price__title lang" key="price__title">свободные апартаменты в продаже</h4>
+<div class="price__filter">
+<p class="price__common lang" key="price__common">Сортировать по:</p>
+<button class="price__btns lang" key="price__btns1">по цене</button>
+<button class="price__btns lang" key="price__btns2">по расположению</button>
+<button class="price__btns lang" key="price__btns3">с мебелью</button>
+</div>
+<div class="price__card-content">
+<div class="price__card" data-aos="fade-up" data-aos-duration="2000">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+<div class="price__card" data-aos="fade-up" data-aos-duration="4000">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+<div class="price__card" data-aos="fade-up" data-aos-duration="3000">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+</div>
+<div class="price__card-content price__card-content-hid hidden">
+<div class="price__card">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+<div class="price__card">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+<div class="price__card">
+<picture><source srcset="./img/home.webp" type="image/webp"><img src="./img/home.jpeg" alt="home"></picture>
+<h2 class="price__text-title lang" key="price__text-title">Большая квартира 2+1с шикарным видом на горы и море в Махмутларе</h2>
+<p class="price__info lang" key="price__info">Планировка: <span>2+1</span></p>
+<p class="price__info lang" key="price__info1">Площадь: <span>142м&sup2;</span></p>
+<div class="price__money">
+<div class="price__info lang" key="price__info2">стоимость от:</div>
+<div><span class="lang" key="price__info3">500 000€</span></div>
+</div>
+<button class="price__btn lang" key="price__btn">узнать подробнее</button>
+</div>
+</div>
+<p class="price__hid lang" key="price__hid">показать еще</p>
+</div>
+</section>
+<section class="studying" style="background-image: url(./img/studyingbg.jpeg); background-size: cover">
+<div class="container__fluid">
+<div class="container">
+<div class="select__dialog-one">
+<picture><source srcset="./img/dialog1.webp" type="image/webp"><img src="./img/dialog1.png" alt="dialog1" /></picture>
+<p class="select__dialog-text lang" key="studying__info" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">Что на Кипре с образованием?</p>
+</div>
+<h4 class="title studying__title lang" key="studying__title">Немногие знают, но северный Кипр – бывшая колония Англии</h4>
+<p class="studying__text lang" key="studying__text">Большинство населения страны владеет английским языком</p>
+<span class="studying__universu lang" key="studying__universu">Самый крупный университет Северного Кипра с 1774 года</span>
+<ul class="studying__list" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+<li class="studying__item lang" key="studying__item1">Образование ведется английском и турецком языках</li>
+<li class="studying__item lang" key="studying__item2">Обучаются студенты более, чем из 70 стран мира</li>
+<li class="studying__item lang" key="studying__item3">Входит в 200 лучших университетов мира по рейтингу</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="container">
+<div class="select__dialog">
+<div class="select__dialog-one">
+<picture><source srcset="./img/dialog1.webp" type="image/webp"><img src="./img/dialog1.png" alt="dialog1" /></picture>
+<p class="select__dialog-text lang" key="select__dialog-text1">Предположим, я приобрету недвижимость. <br> Чем занять себя на Кипре?</p>
+</div>
+<div class="select__dialog-two">
+<picture><source srcset="./img/dialog2.webp" type="image/webp"><img src="./img/dialog2.png" alt="dialog2" /></picture>
+<p class="select__dialog-text lang" key="select__dialog-text2">Я понимаю, как не просто принять решение о покупке дома вдали от Родины, в добавок проживать, не зная языка и менталитета</p>
+</div>
+</div>
+</div>
+<section class="feel" style="background-image: url(./img/fellbg.jpeg); background-size: cover"> 
+<div class="container">
+<h3 class="feel__title lang" key="feel__title">Чувствуйте себя на северном Кипре</h3>
+<div class="feel__top">
+<span class="feel__home lang" key="feel__home1">-как</span> <picture><source srcset="./img/smallhome.webp" type="image/webp"><img class="feel__img" src="./img/smallhome.png" alt="smallhome"></picture> <span class="feel__home lang" key="feel__home2">дома</span>
+</div>
+<div class="feel__content">
+<div class="feel__row">
+<div class="feel__col" data-aos="flip-left" data-aos-duration="1500">
+<picture><source srcset="./img/feel/feel1.webp" type="image/webp"><img src="./img/feel/feel1.png" alt="feel1"></picture>
+<p class="feel__info lang" key="feel__info1">Русско-говорящий персонал управляющей компании поможет решить бытовые проблемы (сим-карта, телефония, интернет и т.д)</p>
+</div>
+<div class="feel__col" data-aos="flip-left" data-aos-duration="1500">
+<picture><source srcset="./img/feel/feel5.webp" type="image/webp"><img src="./img/feel/feel5.png" alt="feel1"></picture>
+<p class="feel__info lang" key="feel__info2">Вокруг ни одного загрязняющего производства, только теплый песок (Не галька) и теплое средиземное море</p>
+</div>
+</div>
+<div class="feel__row">
+<div class="feel__col" data-aos="flip-left" data-aos-duration="1500">
+<picture><source srcset="./img/feel/feel2.webp" type="image/webp"><img src="./img/feel/feel2.png" alt="feel1"></picture>
+<p class="feel__info lang" key="feel__info3">7 дней проживания в премиум-апартаментах нашей компании</p>
+</div>
+<div class="feel__col feel__col-mrg" data-aos="flip-left" data-aos-duration="1500">
+<picture><source srcset="./img/feel/feel3.webp" type="image/webp"><img src="./img/feel/feel3.png" alt="feel1"></picture>
+<p class="feel__info lang" key="feel__info4">Встретим вас с табличкой и организуем трансфер с аэропорта</p>
+</div>
+<div class="feel__col" data-aos="flip-left" data-aos-duration="1500">
+<picture><source srcset="./img/feel/feel4.webp" type="image/webp"><img src="./img/feel/feel4.png" alt="feel1"></picture>
+<p class="feel__info lang" key="feel__info5">Регистрация и составление документации собственности</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bonus">
+<div class="container">
+<div class="bonus__content">
+<div class="bonus__list">
+<h3 class="title lang" key="bonus__title">А так же..</h3>
+<ul class="bonus__list-col">
+<li class="bonus__list-col-item lang" key="bonus__list-col-item1">Безвизовая страна с самым длительным купальным сезоном в Средиземноморье</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item2">Нет преступности и коррупции: никаких справок о доходах при покупке недвижимости</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item3">Самый благоприятный климат в мире, по мнению экологов, с 330 солнечных дней</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item4">Покупая недвижимость, получаешь ВНЖ за 21 день: налог на жилье в год - 60 тг за м&sup2;</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item5">Никто не спросит о происхождении Ваших денег</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item6">100% тайна вкладов, легкое открытие и ведение бизнеса</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item7">Расходы на проживание соответствуют «казахстанским»</li>
+<li class="bonus__list-col-item lang" key="bonus__list-col-item8">Упрощенная иммиграция</li>
+</ul>
+</div>
+<div class="bonus__img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"> 
+<picture><source srcset="./img/lady.webp" type="image/webp"><img src="./img/lady.png" alt="lady"></picture>
+</div>
+</div>
+</div>
+</section>
+<section class="interesting">
+<div class="container">
+<h3 class="title interesting__title lang" key="interesting__title">Мы предложим адвоката, который будет представлять ваши интересы</h3>
+<p class="interesting__text lang" key="interesting__text">в гос.органах во время регистрации прав на недвижимость</p>
+<div class="interesting__content">
+<div class="interesting__card interesting__card-one" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<div class="interesting__number">01</div>
+<p class="interesting__info lang" key="interesting__info">Оставляете заявку на сайте</p>
+<button class="header__btn lang" key="header__btn">Записаться на тур</button>
+<p class="interesting__phone lang" key="interesting__phone">
+<a href="tel:+905338512289 lang" >или позвоните по номеру +90 (533) 851-22-89</a>
+</p>
+<picture><source srcset="./img/interestingCard/card1.webp" type="image/webp"><img src="./img/interestingCard/card1.png" alt="card1"></picture>
+</div>
+<div class="interesting__card interesting__card-two" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<div class="interesting__number">02</div>
+<p class="interesting__info lang" key="interesting__info1">Выбираем удачные даты и назначаем время экскурсии</p>
+<picture><source srcset="./img/interestingCard/card2.webp" type="image/webp"><img src="./img/interestingCard/card2.png" alt="card2"></picture>
+</div>
+<div class="interesting__card interesting__card-three" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<div class="interesting__number">03</div>
+<p class="interesting__info lang" key="interesting__info2">Звонок менеджера</p>
+<picture><source srcset="./img/interestingCard/card3.webp" type="image/webp"><img src="./img/interestingCard/card3.png" alt="card3"></picture>
+</div>
+<div class="interesting__card interesting__card-four" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+<div class="interesting__number">04</div>
+<p class="interesting__info lang" key="interesting__info3">Лично встретим вас</p>
+<p class="interesting__info lang" key="interesting__info4">в Аэропорту и поможем с юридическими вопросами</p>
+<picture><source srcset="./img/interestingCard/card4.webp" type="image/webp"><img src="./img/interestingCard/card4.png" alt="card4"></picture>
+</div>
+</div>
+<div class="interesting__mouse">
+<picture><source srcset="./img/interestingCard/mouse.webp" type="image/webp"><img src="./img/interestingCard/mouse.png" alt="mouse"></picture>
+</div>
+</div>
+</section>
+<section class="press">
+<div class="container">
+<h3 class="title interesting__title lang" key="press__title">обо мне пишут в сми</h3>
+<p class="interesting__text lang" key="press__text1">и доверяют медийные личности</p>
+<div class="swiper swiper2">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<picture><source srcset="./img/Rectangle.webp" type="image/webp"><img src="./img/Rectangle.jpeg" alt="home"></picture>
+<p class="press__text lang" key="press__text">Большая квартира 2+1 с шикарным видом на горы и море на Кипре</p>
+<p class="press__subtitle lang" key="press__subtitle">Краткое описание статьи буквально в две строки, чтобы заинтересовать</p>
+<a class="press__link lang" href="#" key="press__link">читать подробнее</a>
+</div>
+<div class="swiper-slide">
+<picture><source srcset="./img/Rectangle.webp" type="image/webp"><img src="./img/Rectangle.jpeg" alt="home"></picture>
+<p class="press__text lang" key="press__text">Большая квартира 2+1 с шикарным видом на горы и море на Кипре</p>
+<p class="press__subtitle lang" key="press__subtitle">Краткое описание статьи буквально в две строки, чтобы заинтересовать</p>
+<a class="press__link lang" href="#" key="press__link">читать подробнее</a>
+</div>
+<div class="swiper-slide">
+<picture><source srcset="./img/Rectangle.webp" type="image/webp"><img src="./img/Rectangle.jpeg" alt="home"></picture>
+<p class="press__text lang" key="press__text">Большая квартира 2+1 с шикарным видом на горы и море на Кипре</p>
+<p class="press__subtitle lang" key="press__subtitle">Краткое описание статьи буквально в две строки, чтобы заинтересовать</p>
+<a class="press__link lang" href="#" key="press__link">читать подробнее</a>
+</div>
+</div>
+</div>
+<div class="press__img-block">
+<span class="press__slider" key="press__slider1">Листайте</span> <picture><source srcset="./img/hand.webp" type="image/webp"><img class="press__img" src="./img/hand.png" alt="hand"></picture> <span class="press__slider lang" key="press__slider2">влево, чтобы увидеть</span>
+</div>
+</div>
+</section>
+<section class="reviews">
+<div class="container">
+<h3 class="title reviews__title lang" key="reviews__title">Посмотрите отзывы постоянных клиентов:</h3>
+<div class="price__filter">
+<button class="price__btns price__btns-pdng lang" key="reviews__btns1">отзывы instagram</button>
+<button class="price__btns price__btns-pdng lang" key="reviews__btns2">видео-отзывы</button>
+<button class="price__btns price__btns-pdng lang" key="reviews__btns3">интервью со звездами</button>
+</div>
+<div class="reviews__content">
+<div class="reviews__item" data-aos="fade-up-right" data-aos-duration="2000">
+<div class="reviews__img">
+<picture><source srcset="./img/reviews/reviews1.webp" type="image/webp"><img src="./img/reviews/reviews1.jpeg" alt="reviews"></picture>
+<div class="reviews__btn"></div>
+</div>
+<div class="reviews__subtitle lang" key="reviews__subtitle">Видео-интервью с Викторией Дайнеко, покупка виллы 5+2, май, 2021 год</div>
+<div class="reviews__text lang" key="reviews__text">продолжительность: 15 мин</div>
+</div>
+<div class="reviews__item" data-aos="fade-up-left" data-aos-duration="2000">
+<div class="reviews__img">
+<picture><source srcset="./img/reviews/rewievs2.webp" type="image/webp"><img src="./img/reviews/rewievs2.jpeg" alt="reviews"></picture>
+<div class="reviews__btn"></div>
+</div>
+<div class="reviews__subtitle lang" key="reviews__subtitle">Видео-интервью с Викторией Дайнеко, покупка виллы 5+2, май, 2021 год</div>
+<div class="reviews__text lang" key="reviews__text">продолжительность: 15 мин</div>
+</div>
+<div class="reviews__item" data-aos="fade-up-right" data-aos-duration="2000">
+<div class="reviews__img">
+<picture><source srcset="./img/reviews/rewievs3.webp" type="image/webp"><img src="./img/reviews/rewievs3.jpeg" alt="reviews"></picture>
+<div class="reviews__btn"></div>
+</div>
+<div class="reviews__subtitle lang" key="reviews__subtitle">Видео-интервью с Викторией Дайнеко, покупка виллы 5+2, май, 2021 год</div>
+<div class="reviews__text lang" key="reviews__text">продолжительность: 15 мин</div>
+</div>
+<div class="reviews__item" data-aos="fade-up-left" data-aos-duration="2000">
+<div class="reviews__img">
+<picture><source srcset="./img/reviews/rewievs4.webp" type="image/webp"><img src="./img/reviews/rewievs4.jpeg" alt="reviews"></picture>
+<div class="reviews__btn"></div>
+</div>
+<div class="reviews__subtitle lang" key="reviews__subtitle">Видео-интервью с Викторией Дайнеко, покупка виллы 5+2, май, 2021 год</div>
+<div class="reviews__text lang" key="reviews__text">продолжительность: 15 мин</div>
+</div>
+</div>
+</div>
+</section>
+<section class="qwestions" style="background-image: url(./img/accbg.jpeg); background-size: cover">
+<div class="container">
+<h3 class="title lang" key="qwestions__title">Часто задаваемые вопросы:</h3>
+<div class="qwestions__block">
+<div class="qwestions__block-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+<div class="qwestions__accardions-title lang" data-name="accordeon-title" key="qwestions__accardions-title1">Можно ли встретиться с Вами в Алмате?<span class="qwestions__accardions-close lang" key="qwestions__accardions-close">+</span></div>
+<div class="hidden qwestions__accardions-content">
+<p class="lang" key="accardion__text">Безусловно, консультация с широким активом не оставляет шанса для прогресса профессионального сообщества.</p>
+</div>
+</div>
+<div class="qwestions__block-item" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+<div class="qwestions__accardions-title lang" data-name="accordeon-title" key="qwestions__accardions-title2">Можно ли оформить услугу в рассрочку или по частям?<span class="qwestions__accardions-close lang" key="qwestions__accardions-close">+</span></div>
+<div class="hidden qwestions__accardions-content">
+<p class="lang" key="accardion__text">Безусловно, консультация с широким активом не оставляет шанса для прогресса профессионального сообщества.</p>
+</div>
+</div>           
+<div class="qwestions__block-item" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+<div class="qwestions__accardions-title lang" data-name="accordeon-title" key="qwestions__accardions-title3">Даете ли вы скидки постоянным клиентам?<span class="qwestions__accardions-close lang" key="qwestions__accardions-close">+</span></div>
+<div class="hidden qwestions__accardions-content">
+<p class="lang" key="accardion__text">Безусловно, консультация с широким активом не оставляет шанса для прогресса профессионального сообщества.</p>
+</div>
+</div> 
+<div class="qwestions__block-item" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+<div class="qwestions__accardions-title lang" data-name="accordeon-title" key="qwestions__accardions-title4">Можно ли поговорить с Вами по Zoom’у?<span class="qwestions__accardions-close lang" key="qwestions__accardions-close">+</span></div>
+<div class="hidden qwestions__accardions-content">
+<p class="lang" key="accardion__text">Безусловно, консультация с широким активом не оставляет шанса для прогресса профессионального сообщества.</p>
+</div>
+</div>
+<div class="qwestions__block-item" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+<div class="qwestions__accardions-title lang" data-name="accordeon-title" key="qwestions__accardions-title5">Как долго будет проходить строительство?<span class="qwestions__accardions-close lang" key="qwestions__accardions-close">+</span></div>
+<div class="hidden qwestions__accardions-content">
+<p class="lang" key="accardion__text">Безусловно, консультация с широким активом не оставляет шанса для прогресса профессионального сообщества.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container__fluid">
+<div class="container">
+<div class="footer__content">
+<div class="footer__politic">
+<a href="#" class="lang" key="footer__link1">Политика конфендициальности</a>
+<a href="#" class="lang" key="footer__link2">Договор оферты</a>
+</div>
+<div class="footer__logo">
+<a href="index.html"><picture><source srcset="./img/logofooter.webp" type="image/webp"><img src="./img/logofooter.png" alt="logo"></picture></a> 
+</div>
+<div class="footer__devoloper">
+<p class="lang" key="footer__devoloper1">Сайт разработан конмандой</p>
+<p class="lang" key="footer__devoloper2">Александра Цой</p>
+</div>
+</div>
+</div>
+</div>    
+</footer>
+<script src="js/app.min.js?_v=20230302190313"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js?_v=20230302190313"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230302190313"></script>
+<script>AOS.init();</script>
+<script>const swiper = new Swiper(".swiper", { direction: "horizontal", loop: true, spaceBetween: 30, slidesPerView: 6, breakpoints: { 320: { slidesPerView: 1.5, centeredSlides: true }, 480: { slidesPerView: 1.5, centeredSlides: true }, 640: { slidesPerView: 2 }, 768: { slidesPerView: 4 }, 991: { slidesPerView: 6 } } });</script>
+<script>const swiper1 = new Swiper(".swiper1", { direction: "horizontal", loop: true, spaceBetween: 30, slidesPerView: 3, breakpoints: { 320: { slidesPerView: 1 }, 480: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 768: { slidesPerView: 3 },  991: { slidesPerView: 3 } } });</script>
+<script>const swiper2 = new Swiper(".swiper2", { direction: "horizontal", loop: true, spaceBetween: 30, slidesPerView: 3, breakpoints: { 320: { slidesPerView: 1 }, 480: { slidesPerView: 1 }, 640: { slidesPerView: 1 }, 768: { slidesPerView: 3 },  991: { slidesPerView: 3 } } });</script>
+</body>
+</html>
